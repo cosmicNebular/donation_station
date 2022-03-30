@@ -1,43 +1,12 @@
 {
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "**/node_modules",
-    "**/.*/"
-  ],
   "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "./src/@types",
-    "allowSyntheticDefaultImports": true,
-    "emitDecoratorMetadata": false,
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "pretty": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "stripInternal": true,
-    "target": "es5",
-    "jsx": "react-jsx",
-    "lib": [
-      "es2021",
-      "dom"
+    "types": ["mocha", "chai"],
+    "typeRoots": [
+      "../donationstation2/node_modules/@types"
     ],
-    "skipLibCheck": true,
-    "allowJs": false,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true
   }
 }
